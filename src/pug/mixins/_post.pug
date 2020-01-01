@@ -1,0 +1,19 @@
+mixin post(title, date, comments, image, text)
+	.post
+		h3.post__title= title
+		.post__date #{date} — #{comments}
+		img(src="./img/posts/" + image, alt= title).post__image
+		.post__content 
+			p #{text}
+		.post__footer
+			//- button.button.button--arrow read more
+			+button("read more")(class="button--arrow")
+			.post__social
+				a(href="#").header__link
+					img(src="./img/icons/whatsapp.svg", alt="whatsapp").icon
+				a(href="#").header__link
+					img(src="./img/icons/instagram.svg", alt="instagram").icon
+				a(href="#").header__link
+					img(src="./img/icons/twitter.svg", alt="instagram").icon
+				a(href="#").header__link
+					img(src="./img/icons/facebook-f.svg", alt="instagram").icon

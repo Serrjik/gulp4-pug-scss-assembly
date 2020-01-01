@@ -1,0 +1,5 @@
+.widget
+	+widget-title("Popular posts")
+
+	each item in jsonData.popularposts
+		+post-preview(item.title, item.date, item.comments, item.image)

@@ -1,0 +1,5 @@
+mixin post-preview(title, date, comments, image)
+	a(href="#").post-preview
+		img(src="./img/posts/thumbs/" + image, alt= title).post-preview__image
+		h4.post-preview__title= title
+		.post-preview__date  #{date} — #{comments}

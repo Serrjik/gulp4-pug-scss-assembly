@@ -1,0 +1,17 @@
+extends ./../layouts/main.pug
+
+block variables
+	- const pagetitle = "Главная";
+
+block content
+	main.container.clearfix
+		section.posts
+			each item in jsonData.posts
+				+post(item.title, item.date, item.comments, item.image, item.text)
+
+			include ./../sections/_pagination.pug
+
+		aside.sidebar
+			include ./../sections/_widget-recent-posts.pug
+			include ./../sections/_widget-popular-posts.pug
+			include ./../sections/_widget-insta.pug

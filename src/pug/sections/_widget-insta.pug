@@ -1,0 +1,6 @@
+.widget
+	+widget-title("Instagram").mb30
+
+	.widget__image-holder
+		each item in jsonData.instagram
+			+insta-image(item.href, item.image, item.altext)
