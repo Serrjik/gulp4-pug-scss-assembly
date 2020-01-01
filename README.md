@@ -1,6 +1,6 @@
 # Gulp v.4 сборка на шаблонизаторе Pug и SCSS для вёрстки проекта из нескольких страниц
 
-Сборка на Gulp 4 на примере вёрстки 1 страницы сайта.
+Сборка на Gulp 4 на примере вёрстки 1 страницы блога.
 [Посмотреть страницу](https://serrjik.github.io/gulp4-pug-scss-assembly/)
 ![Скриншот страницы](https://raw.githubusercontent.com/Serrjik/gulp4-pug-scss-assembly/master/page.jpg)
 
